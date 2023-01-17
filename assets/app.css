@@ -200,7 +200,6 @@ img {
 }
 
 .site-name {
-  max-width: calc(100% - 2rem - 3rem);
   padding-bottom: 0.3rem;
   overflow: auto;
   font-size: 3.4rem;
@@ -363,7 +362,7 @@ hr.post-separator:before {
 /* Post single
  -------------------------------------------------- */
 .post-title {
-  margin-bottom: calc(var(--y-gap) + 1rem);
+  margin-bottom: 4rem;
 }
 
 .post-title p, .post-date {
