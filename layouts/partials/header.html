@@ -1,11 +1,11 @@
 <header class="header">
   {{ if .IsHome }}
   <h1 class="logo">
-    <a class="site-name" href="{{ `` | absURL }}">{{ site.Title }}</a><a class="btn-dark"></a>
+    <a class="site-name" href="{{ `` | absURL }}">{{ site.Title }}</a>
   </h1>
   {{ else }}
   <p class="logo">
-    <a class="site-name" href="{{ `` | absURL }}">{{ site.Title }}</a><a class="btn-dark"></a>
+    <a class="site-name" href="{{ `` | absURL }}">{{ site.Title }}</a>
   </p>
   {{ end }}
 
@@ -17,7 +17,7 @@
 
     let setDark = (isDark) => {
       bodyClx[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark ? 'yes' : 'no');
+      localStorage.setItem('dark', isDark ? 'yes' : 'yes');
     };
 
     setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
